@@ -9,7 +9,7 @@ import java.util.UUID;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class RestErrorTest extends BaseComponent {
+final class RestErrorTest extends BaseComponent {
 
   private static final String CAUSED_BY_MESSAGE = "Caused by me.";
   private static final Exception CAUSED_BY_EXCEPTION = new Exception(CAUSED_BY_MESSAGE);
