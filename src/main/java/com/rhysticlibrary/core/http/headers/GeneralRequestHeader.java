@@ -6,6 +6,8 @@ import lombok.NonNull;
 import lombok.experimental.Accessors;
 import org.springframework.http.HttpHeaders;
 
+import java.util.UUID;
+
 /**
  * General Request Header enum representing generic HttpHeaders.
  */
@@ -17,6 +19,10 @@ public enum GeneralRequestHeader implements HttpHeader {
    * Representation of the ACCEPT Http Header.
    */
   ACCEPT(HttpHeaders.ACCEPT, String.class, false),
+  /**
+   * The Trace ID of the immediate caller to the rest endpoint.
+   */
+  CALLER_TRACE_ID("RL-Caller-Trace-Id", UUID.class, false),
   /**
    * Representation of the CONTENT_TYPE Http Header.
    */
