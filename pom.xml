@@ -53,9 +53,9 @@
 
     <!--Test Versions-->
     <assertj.version>3.27.3</assertj.version>
-    <equals-verifier.version>3.18.2</equals-verifier.version>
-    <junit.version>5.12.0-M1</junit.version>
-    <spring-test.version>7.0.0-M1</spring-test.version>
+    <equals-verifier.version>3.19.1</equals-verifier.version>
+    <junit.version>5.12.0-RC2</junit.version>
+    <spring-test.version>7.0.0-M2</spring-test.version>
 
   </properties>
 
