@@ -21,7 +21,7 @@ public final class HttpEntityNotFoundException extends RuntimeException {
    * @return an exception for the given entity.
    */
   public static @NonNull HttpEntityNotFoundException forEntity(@NonNull HttpEntity entity) {
-    return HttpEntityNotFoundException.forEntity(entity, null);
+    return forEntity(entity, null);
   }
 
   /**
