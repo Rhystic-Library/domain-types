@@ -13,8 +13,17 @@ import lombok.experimental.Accessors;
 @Getter
 public enum GeneralLoggerContext implements LoggerContext {
 
+  /**
+   * The exception message
+   */
   EXCEPTION("exception", String.class, false),
+  /**
+   * The trace of the exception
+   */
   EXCEPTION_TRACE("exceptionTrace", StackTraceElement[].class, true),
+  /**
+   * The duration of the request.
+   */
   REQUEST_DURATION("requestDuration", Long.class, false);
 
   @NonNull
